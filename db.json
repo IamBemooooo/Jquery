@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "name": "Kimary",
+      "birthday": "04-08-2004",
+      "phone": "1232437",
+      "hometown": "HN"
+    },
+    {
+      "id": 3,
+      "name": "Jack97",
+      "birthday": "04-08-2004",
+      "phone": "1232437",
+      "hometown": "HN"
+    },
+    {
+      "name": "Nguyen Van Long",
+      "birthday": "2024-08-15",
+      "hometown": "HN",
+      "phone": "098765432",
+      "id": 4
+    },
+    {
+      "name": "Ta Van Long",
+      "birthday": "2024-08-23",
+      "hometown": "HN",
+      "phone": "0987654321",
+      "id": 5
+    },
+    {
+      "name": "Jack99",
+      "birthday": "2023-07-01",
+      "hometown": "HN",
+      "phone": "0987654321",
+      "id": 8
+    }
+  ]
+}

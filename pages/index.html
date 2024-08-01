@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="../lib/bootstrap.js"></script>
+    <script src="../lib/font-fontawesome-ae333ffef2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid d-flex justify-content-center" style="margin-top: 100px;margin-bottom: 50px;">
+            <form style="width: 60%;" class="needs-validation border border-3 rounded-5 form-student" novalidate>
+                <div class="mb-3 container d-flex justify-content-center align-items-center">
+                    <p class="fs-3">Student Form</p>
+                </div>
+                <div class="mb-3 container d-flex justify-content-center align-items-center">
+                    <label for="Name" style="width: 20%;" class="form-label">Name</label>
+                    <div style="width: 70%;">
+                        <input type="string" name="Name" class="form-control" id="Name" placeholder="Name..." required>
+                        <div class="invalid-feedback">Name is not valid</div>
+                    </div>
+                </div>
+
+                <div class="mb-3 container d-flex justify-content-center align-items-center">
+                    <label style="width: 20%;">Birthday</label>
+                    <div style="width: 70%;">
+                        <input type="date" name="Birthday" class="form-control" id="Birthday" placeholder="Birthday...">
+                        <div class="invalid-feedback">Birthday is not valid</div>
+                    </div>
+                </div>
+
+                <div class="mb-3 container d-flex justify-content-center align-items-center">
+                    <label style="width: 20%;">Phone</label>
+                    <div style="width: 70%;">
+                        <input type="number" name="Phone" class="form-control" id="Phone" placeholder="Phone...">
+                        <div class="invalid-feedback">Birthday is not valid</div>
+                    </div>
+                   
+                </div>
+
+                <div class="mb-3 container d-flex justify-content-center align-items-center">
+                    <label style="width: 20%;">Hometown</label>
+                    <div style="width: 70%;">
+                        <input type="string" name="Hometown" class="form-control" id="Hometown" placeholder="Hometown...">
+                        <div class="invalid-feedback">Birthday is not valid</div>
+                    </div>
+                </div>
+                <div class="mb-3 container d-flex justify-content-center align-items-center">
+                   <div class="container d-flex justify-content-end m-0" style="width: 90%;">
+                    <button type="submit" style="width: 20%;" class="form-control btnsav btn border border-3 rounded-2">
+                        Save
+                    </button>
+                    <button style="width: 20%;" class="btnclr btn border border-3 rounded-2 ms-5">
+                        Reset
+                    </button>
+                   </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center p-0" style="margin-top: 50px;margin-bottom: 50px;">
+            <div class=" container-fluid d-flex justify-content-start m-0 p-0">
+                <div class="modal fade" id="deletebtn" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Thông báo</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                bạn có muốn xóa các bản ghi đã chọn không
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary btndel">Chắc chắn!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button style="width: 10%;" class="deletecheck btn border border-3 rounded-2" data-bs-target="#deletebtn" data-bs-toggle="modal">
+                    Delete
+                </button>
+                <button style="width: 10%;" type="submit" class="editcheck btn border border-3 rounded-2 ms-5">
+                    Edit
+                </button>
+            </div>
+        </div>
+
+        <table id="table-student" class="container-fluid table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Birthday</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Hometown</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
